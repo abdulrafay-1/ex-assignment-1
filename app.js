@@ -15,7 +15,9 @@ async function fetchUsers() {
         <p>Website : ${data[index].website}</p>
     `
 }
+
 fetchUsers()
+
 nextBtn.addEventListener('click', () => {
     if (data && (index < data.length - 1)) {
         index = index + 1;
