@@ -5,12 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 1</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            justify-content: center;
+            background: #eee;
+        }
+
+        section {
+            width: 260px;
+            max-width: 100%;
+            height: max-content;
+            padding: 12px 30px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            margin-top: 12px;
+            padding: 8px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:first-child{
+            margin-right: 110px;
+        }
+    </style>
 </head>
 
 <body>
-    <main id="main"></main>
-    <button id="prev-btn">Previous</button>
-    <button id="next-btn">Next</button>
+    <section>
+        <main id="main"></main>
+        <div>
+            <button id="prev-btn">Previous</button>
+            <button id="next-btn">Next</button>
+        </div>
+    </section>
 
     <script src="app.js"></script>
 </body>
